@@ -7,8 +7,7 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
-  Text
-
+  Text,
 } from 'react-native';
 
 export default function App() {
@@ -39,7 +38,7 @@ export default function App() {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.btnRegister}>
-          <Text>Create free account</Text>
+          <Text style={styles.registerText}>Create free account</Text>
         </TouchableOpacity>
 
       </View>
@@ -55,6 +54,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: 'center',
     backgroundColor: '#333333',
+    
   },
   containerLogo: {
     flex: 1,
@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: '90%',
+    paddingBottom: 50
   },
   input: {
     backgroundColor: '#FFF',
@@ -87,6 +88,12 @@ const styles = StyleSheet.create({
   submitText: {
     color: "#FFF",
     fontSize:18,
+  },
+  registerText:{
+    marginTop:10 ,
+  },
+  registerText:{
+    color:'#FFF',
   }
 
 })
